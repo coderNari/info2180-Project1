@@ -1,14 +1,21 @@
 /* Add your CSS to this file */
+
+
 body {
-    margin: 0;
-    font-size: 16px;
+    margin: 20;
+    padding: auto;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+    /* display: flex; */
+    margin: 0px auto;
+    width: 85%;
 }
+
+
+
 header{
     padding: 50px;
     margin: auto;
@@ -31,15 +38,15 @@ h3{
 }
 
 ul{
-    margin: auto;
-    padding: auto;
+    margin: 5px;
+    padding: 10px;
     list-style-type: none;
-    
+
 }
 
 li{
     float: right;
-    
+
 }
 li a{
     padding: 6px;
@@ -51,10 +58,232 @@ nav ul li a:hover{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: 10, 150, 100, 200,250, 150, 10;
+    grid-template-columns: 100px,100px,200px;
+    grid-template-rows: 20%, 30%, 40%, 50%, 100px, 25px;
 }
-p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* p{
+
+} */
+
+
+.overview-hero-image img{
+
+  width: 150px;
+
+}
+
+
+.overview-hero-text{
+  margin-top: -10px;
+  margin-left: 20px;
+  max-width: 75%;
+
+}
+.overview-hero .container {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+}
+
+img{
+    float: center;
+    height: 120px;
+    width: 60px;
+}
+
+.card img{
+  display: block;
+  height: 200px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.cards{
+  margin: 0 auto;
+  height: 450px;
+  display: flex;
+  width: inherit;
+  margin-bottom: 30px;
+  
+}
+
+.container h2{
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  width: 33%;
+  background-color: white;
+  margin: 5px 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border-color: #E2E8F0;
+ 
+}
+
+.card-body{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.overview-hero{
+    grid-column-start: span 3;
+    grid-row: 2;
+    background-color: #E2E8F0;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.testing .container{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.testing-desciption{
+  width: 75%;
+}
+
+.testing-desciption h2{
+  margin-left: 0px;
+  color: white;
+}
+
+.stories .container {
+  height: 400px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.stories .container article{
+  display: flex;
+}
+
+
+.stories .container article img{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.learn-about{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.testing{
+    background-color: #4A5568;
+    color: white;
+    width: 100%;
+    padding: 50px;
+
+}
+.testing .btn{
+    grid-column: 3;
+    float: right;
+    color: white;
+    text-decoration: none;
+    background-color: #48BB78;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.subsciption{
+  display: flex;
+}
+
+
+article h3{
     font-size: 18px;
 }
+
+article a{
+    color: #5A67D8;
+}
+
+article img{
+    display: flex;
+    border-radius: 100%;
+    float: left;
+    overflow: hidden;
+    width: 80px;
+}
+
+.article-body{
+  width: 85%;
+  margin-left: 20px;
+}
+
+
+.newsletter{
+    padding: 10px;
+    background-color: #48BB78;
+}
+
+.newsletter .container{
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+.newsletter .container h3{
+  width: 30%;
+  margin: 30px auto;
+  color: white;
+}
+
+.newsletter .container p{
+  width: 60%;
+  margin: 30px auto;
+  color: white;
+}
+
+.newsletter .container form{
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.newsletter .container form div{
+  width: 90%;
+}
+
+.newsletter .container form div input{
+  width: 80%;
+}
+
+
+/* .form-group{
+
+} */
+#email{
+    padding: 10px;
+}
+button{
+    background-color: #5A67D8;
+    margin-left: -40px;
+    width: 200px;
+    padding: 10px;
+    /* float: right */
+}
+
+footer{
+    background-color: #4A5568;
+    color: white;
+    margin-top: -18px;
+    height: 70px;
+}
+
+footer .container{
+    width: 70%;
+    padding: 15px;
+}
+
+
