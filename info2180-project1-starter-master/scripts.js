@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
      
 
     for(var form of document.getElementsByTagName('form')){
-        form.addEventListener('Subscribe', function(ev){
-          ev.preventDefault()
+        form.addEventListener('submit', function(ev){
+          ev.preventDefault();
         })
      }
 
@@ -19,14 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (emailValid(emailad.value.trim())& ! emailEmpty(emailad.value.trim())){
                 emailCheck = true;
                 msg.innerHTML = 'Thank you! Your email address ' + emailad.value + ' has been added to our mailing list!';
-                alert('Thank you! Your email address ' + emailad.value + ' has been added to our mailing list!');
-                
+                //alert('Thank you! Your email address ' + emailad.value + ' has been added to our mailing list!');      
             }else {
-                //var emailCheck = false;
                 if (emailEmpty(emailad.value.trim())){
                     emailCheck= false;
                     msg.innerHTML = 'Please enter a valid email address.';
-                    alert('Please enter a valid email address.');
+                    // alert('Please enter a valid email address.');
                 }
             }
             })
